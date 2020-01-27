@@ -101,7 +101,6 @@ const ioHandler = (entries, self) => {
     const target = entry.target;
 
     if (entry.intersectionRatio > 0.7) {
-      console.log('target :', target);
       target.classList.add(target.getAttribute("data-animation"))
       self.unobserve(target);
     }

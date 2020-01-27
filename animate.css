@@ -27,11 +27,9 @@
 @keyframes words {
   0% {
     color: transparent;
-    transform: translateY(-65px);
   }
   100% {
     color: #fff;
-    transform: translateY(20px);
   }
 }
 
@@ -68,52 +66,52 @@
   display: block;
 }
 
-:root:not(.no-js) [data-animation="kf-fade-in"] {
+[data-animation="kf-fade-in"] {
   opacity: 0;
 }
 
-:root:not(.no-js) [data-animation="kf-fade-in"].kf-fade-in {
+[data-animation="kf-fade-in"].kf-fade-in {
   animation: fadeIn 1s ease 0s forwards;
 }
 
-:root:not(.no-js) [data-animation="kf-left-to-right"] {
+[data-animation="kf-left-to-right"] {
   opacity: 0;
   transform: translateX(-5px);
 }
 
-:root:not(.no-js) [data-animation="kf-left-to-right"].kf-left-to-right {
+[data-animation="kf-left-to-right"].kf-left-to-right {
   animation: leftToRight .6s ease-in-out 0s forwards;
 }
 
-:root:not(.no-js) [data-animation="kf-circle"] {
+[data-animation="kf-circle"] {
   opacity: 0;
 }
 
-:root:not(.no-js) [data-animation="kf-circle"].kf-circle {
+[data-animation="kf-circle"].kf-circle {
   animation: circle 2s ease-in-out 0s forwards;
 }
 
-:root:not(.no-js) [data-animation="kf-words"] span {
+[data-animation="kf-words"] span {
   color: transparent;
 }
 
-:root:not(.no-js) [data-animation="kf-words"].kf-words span {
+[data-animation="kf-words"].kf-words span {
   animation: words 200ms ease calc(var(--char-index) * 50ms) forwards;
 }
 
-:root:not(.no-js) [data-animation="kf-translate-y"] {
+[data-animation="kf-translate-y"] {
   opacity: 0;
 }
 
-:root:not(.no-js) [data-animation="kf-translate-y"].kf-translate-y {
+[data-animation="kf-translate-y"].kf-translate-y {
   animation: translateY 1s ease-in-out 0s forwards;
 }
 
-:root:not(.no-js) [data-animation="scale-out-center"] {
+[data-animation="scale-out-center"] {
   opacity: 0;
 }
 
-:root:not(.no-js) [data-animation="scale-out-center"].scale-out-center {
+[data-animation="scale-out-center"].scale-out-center {
   animation: scale-out-center 1s ease-in-out 0s forwards;
 }
 
