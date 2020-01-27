@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <script src="script.js" defer></script>
+  <title>Landing Css Animation</title>
+</head>
+<body>
+  <header class="container container--header">
+    <nav class="nav">
+      <a class="nav__logo" href="#!" data-animation="kf-fade-in">
+        <img class="logo" src="img/logo.svg" alt="">
+      </a>
+      <ul class="nav__menu">
+        <li data-animation="kf-left-to-right" style="--kf-delay: 150"><a href="#!">Works</a></li>
+        <li data-animation="kf-left-to-right" style="--kf-delay: 300"><a href="#!">Features</a></li>
+        <li data-animation="kf-left-to-right" style="--kf-delay: 450"><a href="#!">Security</a></li>
+        <li data-animation="kf-left-to-right" style="--kf-delay: 600"><a href="#!">Contact</a></li> 
+      </ul>
+    </nav>
+    <section class="banner">
+      <div class="banner__txt">
+        <h1 class="banner-title" data-animation="kf-words" data-split-word>Espacio para título del Banner</h1>
+        <h2 class="banner-subtitle" data-animation="scale-out-center" style="--kf-delay: 2000">Subtítulo del Banner, con Heading H2, que contiene una breve descripción sobre que lo que se pretenda publicitar</h2>
+      </div>
+      <div class="banner__form" data-animation="kf-circle" style="--kf-delay: 3000">
+        <form class="form">
+          <div class="enable-js">Para usar el formulario necesita activar JavaScript en su navegador</div>
+          <details id="js-select-level" class="select_container">
+            <summary>--</summary>
+            <fieldset class="select">
+              <label class="select__option">
+                <input checked type="radio" name="level" value="slower">Slower
+              </label>
+              <label class="select__option">
+                <input type="radio" name="level" value="slow">Slow
+              </label>
+              <label class="select__option">
+                <input type="radio" name="level" value="medium">Medium
+              </label>
+              <label class="select__option">
+                <input type="radio" name="level" value="fast">Fast
+              </label>
+              <label class="select__option">
+                <input type="radio" name="level" value="faster">Faster
+              </label>
+            </fieldset>
+          </details>
+          <details id="js-select-city" class="select_container">
+            <summary>--</summary>
+            <div class="select">
+              <label class="select__option">
+                <input checked type="radio" name="city" value="sevilla">Sevilla
+              </label>
+              <label class="select__option">
+                <input type="radio" name="city" value="madrid">Madrid
+              </label>
+              <label class="select__option">
+                <input type="radio" name="city" value="granada">Granada
+              </label>
+              <label class="select__option">
+                <input type="radio" name="city" value="ourense">Ourense
+              </label>
+            </div>
+          </details>
+          <input class="btn" value="Enviar" type="button">
+        </form>
+      </div>
+    </section>
+  </header>
+  
+  <main class="container container--content">
+    <section class="section">
+      <article class="section__left">
+        <ul class="list">
+          <li class="list__item list__item--aviso" data-animation="kf-translate-y" style="--kf-delay: 100">
+            <h3 class="list-title">Avisos</h3>
+            <p class="list-subtitle">Recibe avisos al instante</p>
+          </li>
+          <li class="list__item list__item--notificacion" data-animation="kf-translate-y" style="--kf-delay: 200">
+            <h3 class="list-title">Notificaciones</h3>
+            <p class="list-subtitle">Recibe avisos al instante</p>
+          </li>
+          <li class="list__item list__item--calendario" data-animation="kf-translate-y" style="--kf-delay: 300">
+            <h3 class="list-title">Calendario</h3>
+            <p class="list-subtitle">Recibe avisos al instante</p>
+          </li>
+        </ul>
+      </article>
+      <article class="section__right">
+        <img src="img/model.jpg" data-animation="kf-fade-in" alt="">
+      </article>
+    </section>
+    <section class="section">
+      <article class="section__full">
+        <img src="img/woman.jpg" alt="">
+        <div class="bottom-right" data-animation="kf-circle">
+          <h3>Titulo para texto sobre imagen</h3>
+          <p>Subtítulo para la sección ubicda sobre la imagen</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container container--footer">
+    <ul class="footer-menu">
+      <li class="footer-menu__group" data-animation="kf-left-to-right" style="--kf-delay: 100">
+        <h3 class="footer-title">Bloque 1</h3>
+        <ul>
+          <li><a class="footer-link" href="#!">Item 1</a></li>
+          <li><a class="footer-link" href="#!">Item 2</a></li>
+          <li><a class="footer-link" href="#!">Item 3</a></li>
+          <li><a class="footer-link" href="#!">Item 4</a></li>
+        </ul>
+      </li>
+      <li class="footer-menu__group" data-animation="kf-left-to-right" style="--kf-delay: 200">
+        <h3 class="footer-title">Bloque 2</h3>
+        <ul>
+          <li><a class="footer-link" href="#!">Item 1</a></li>
+          <li><a class="footer-link" href="#!">Item 2</a></li>
+          <li><a class="footer-link" href="#!">Item 3</a></li>
+          <li><a class="footer-link" href="#!">Item 4</a></li>
+        </ul>
+      </li>
+      <li class="footer-menu__group" data-animation="kf-left-to-right" style="--kf-delay: 300">
+        <h3 class="footer-title">Bloque 3</h3>
+        <ul>
+          <li><a class="footer-link" href="#!">Item 1</a></li>
+          <li><a class="footer-link" href="#!">Item 2</a></li>
+          <li><a class="footer-link" href="#!">Item 3</a></li>
+          <li><a class="footer-link" href="#!">Item 4</a></li>
+        </ul>
+      </li>
+      <li class="footer-menu__group" data-animation="kf-left-to-right" style="--kf-delay: 400">
+        <h3 class="footer-title">Bloque 4</h3>
+        <ul>
+          <li><a class="footer-link" href="#!">Item 1</a></li>
+          <li><a class="footer-link" href="#!">Item 2</a></li>
+          <li><a class="footer-link" href="#!">Item 3</a></li>
+          <li><a class="footer-link" href="#!">Item 4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>

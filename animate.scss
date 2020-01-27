@@ -1,0 +1,118 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes leftToRight {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes circle {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(100% at 50% 50%);
+    opacity: 1;
+  }
+}
+@keyframes words {
+	0% {
+    color: transparent;
+    transform: translateY(-65px);
+	}
+	100% {
+    color: #fff;
+    transform: translateY(20px);
+	}
+}
+@keyframes translateY {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes scale-out-center {
+  0% {
+    transform: scale(3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.enable-js {
+  display: none;
+  font-size: .8em;
+  margin-bottom: .8em;
+  text-align: center;
+}
+:root.no-js {
+  .enable-js {
+    display: block;
+  }
+}
+:root:not(.no-js) {
+  [data-animation="kf-fade-in"] {
+    opacity: 0;
+    &.kf-fade-in {
+      animation: fadeIn 1s ease 0s forwards;
+    }
+  }
+  [data-animation="kf-left-to-right"] {
+    opacity: 0;
+    transform: translateX(-5px);
+    &.kf-left-to-right {
+      animation: leftToRight .6s ease-in-out 0s forwards;
+    }
+  }
+  [data-animation="kf-circle"] {
+    opacity: 0;
+    &.kf-circle {
+      animation: circle 2s ease-in-out 0s forwards;
+    }
+  }
+  [data-animation="kf-words"] {
+    span {
+      color: transparent;
+    }
+    &.kf-words {
+      span {
+        animation: words 200ms ease calc(var(--char-index) * 50ms) forwards;
+      }
+    }
+  }
+  [data-animation="kf-translate-y"] {
+    opacity: 0;
+    &.kf-translate-y {
+      animation: translateY 1s ease-in-out 0s forwards;
+    }
+  }
+  
+  [data-animation="scale-out-center"] {
+    opacity: 0;
+    &.scale-out-center {
+      animation: scale-out-center 1s ease-in-out 0s forwards;
+    }
+  }
+}
+
+
+
+
+@media (min-width: 576px) {
+  [data-animation][style*="--kf-delay"] {
+    animation-delay: calc(var(--kf-delay) * 1ms);
+  }
+}
